@@ -23,10 +23,7 @@ app.use('/api/list',listRouter);
 
 Connection(USERNAME,PASSWORD);
 
-app.get("/", (req, res) => {
-    app.use(express.static(path.resolve(__dirname, "frontend", "build")));
-    res.sendFile(path.resolve(__dirname, "frontend", "build", "index.html"));
-  });
+
 
 app.listen(process.env.PORT,() => {
     console.log('Server started');
