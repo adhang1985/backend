@@ -7,6 +7,6 @@ router.post('/addTask',verifyToken,createTask);
 router.put('/editTask/:id',verifyToken,updateTask);
 router.delete('/deleteTask/:id',deleteTask);
 router.get('/getAllTasks/:id',verifyToken,getAllTask);
-router.get('/getTask/:id',verifyToken,getTaskById);
+router.get('/getTask/:id',getTaskById);
 
 module.exports = router;
