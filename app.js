@@ -14,9 +14,9 @@ app.use(cors());
 const USERNAME = process.env.DB_USERNAME;
 const PASSWORD = process.env.DB_PASSWORD;
 
-// app.get('/', (req,res) => {
-//     res.send('Welcome to server');
-// })
+app.get('/', (req,res) => {
+   res.send('Welcome to server');
+})
 
 app.use('/api/auth',authRouter);
 app.use('/api/list',listRouter);
